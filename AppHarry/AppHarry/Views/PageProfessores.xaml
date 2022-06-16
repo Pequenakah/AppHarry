@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:AppHarry.Controls"
+             xmlns:views="clr-namespace:AppHarry.Views"
+             xmlns:data="clr-namespace:AppHarry.Data"
+             x:Class="AppHarry.Views.PageProfessores"
+             Title="Professores"
+              BackgroundColor= "#FFEEDD">
+
+
+    
+    <CollectionView Margin ="1"
+            BackgroundColor="Black"
+            ItemsSource="{x:Static data:DadosProfessores.Professores}"
+            ItemTemplate="{StaticResource HarryTemplate}"
+            SelectionMode="Single"
+            SelectionChanged="AbrirDetalhesProfessores" />
+</ContentPage>

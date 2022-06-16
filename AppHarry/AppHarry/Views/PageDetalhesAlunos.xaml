@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppHarry.Views.PageDetalhesAlunos"
+             Title="Detalhes do Doce"
+             BackgroundColor="Black">
+
+    <ScrollView>
+        <StackLayout Margin="5">
+            <Label Text="{Binding Nome}"
+                            Margin="10"
+                            HorizontalOptions="Center"
+                            Style="{DynamicResource TitleStyle}"
+                            
+                     />
+            <Label Text="{Binding ClassePertencente}"
+                   HorizontalOptions="Center"
+                   FontAttributes="Italic"/>
+            <Image Source="{Binding ImagensURL}"
+                   HeightRequest="200"
+                   WidthRequest="200"
+                   HorizontalOptions="CenterAndExpand"/>
+            <Label Text="{Binding Detalhes}"
+                   Style="{DynamicResource BodyStyle}"
+                   Margin="10"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
